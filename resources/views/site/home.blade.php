@@ -4,6 +4,6 @@
 @section('content')
 
 
-<p>Home</p>
+<h1>Página em Desenvolvimento</h1>
 
 @endsection
