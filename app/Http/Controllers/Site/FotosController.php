@@ -9,6 +9,8 @@ class FotosController extends Controller
 {
     public function index()
     {
-        return view('site.fotos');
+        $fotos = \App\Fotos::all();
+        
+        return view('site.fotos')->with(compact('fotos'));
     }
 }
