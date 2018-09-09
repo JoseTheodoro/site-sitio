@@ -16,13 +16,16 @@
   <header>
       <nav class="navbar navbar-expand-md navbar-light bg-white">
       <a class="navbar-brand" href="{{ route('home') }}">
-          <img src="/images/logo.png" height="130">
+          <img src="/images/logo.png" height="80">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href={{route('home')}}>Home</a>
+                  </li>
             <li class="nav-item">
             <a class="nav-link" href={{route('sitio')}}>O Sítio</a>
             </li>
@@ -39,17 +42,19 @@
             <a class="nav-link" href={{route('localizacao')}}>Localização</a>
             </li>
           </ul>
+          <a class="float-right nav-item" target="__blank" href="https://pt-br.facebook.com/sitiojardimdosvagalumes/"><img src="/images/facebook.svg" height="24" alt=""></a>
         </div>
       </nav>
     </header>
     <div class="container-fluid">
+        @yield('content_out')
       <div class="container">
           @yield('content')
       </div>
     </div>
       <!-- FOOTER -->
       <footer class="container">
-        <p>&copy; 2018 - Stio dos Vagalumes 	</p>
+        <p>&copy; 2018 - Stio dos Vagalumes</p>
       </footer>
     </main>
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>

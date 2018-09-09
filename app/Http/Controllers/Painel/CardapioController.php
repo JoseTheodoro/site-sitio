@@ -5,17 +5,17 @@ namespace App\Http\Controllers\Painel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class FotosController extends Controller
+class CardapioController extends Controller
 {
     public function index()
     {
-        $fotos = \App\Fotos::all();
-        return view('painel.fotos.index')->with(compact('fotos'));
+        $cardapios = \App\Cardapio::all();
+        return view('painel.cardapio.index')->with(compact('cardapios'));
     }
 
     public function create()
     {
-        return view('painel.fotos.create');
+        return view('painel.cardapio.create');
     }
 
     public function store(Request $request)
@@ -26,13 +26,13 @@ class FotosController extends Controller
         $name = $originalImage->getClientOriginalName();
         $image = \Image::make($originalImage)->encode('jpg', 100);
 
-        $image->resize(1200,null, function($constraint) {
+        $image->resize(null,800, function($constraint) {
             $constraint->aspectRatio();
         });
         $name = $time . $name;
         if ( $image->save($path.$name) ) {
-            \App\Fotos::create(['name' => $name]);
-            return redirect()->route('fotos.index');
+            \App\Cardapio::create(['name' => $name]);
+            return redirect()->route('cardapio.index');
         }
 
         return back();
@@ -40,12 +40,12 @@ class FotosController extends Controller
 
     public function delete($id)
     {
-        $foto = \App\Fotos::find($id);
-        $path = public_path() . '/uploads/'.$foto->name;
+        $cardapio = \App\Cardapio::find($id);
+        $path = public_path() . '/uploads/'.$cardapio->name;
 
         \File::delete($path);
 
-        $foto->delete();
+        $cardapio->delete();
 
         return back();
     }

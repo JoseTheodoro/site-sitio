@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit');
 .navbar
 {
-  background: #56ab2f;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
+ background-color: #20bf6b !important;
 }
-
+.banner {
+  font-family: 'Arial'
+}
 .nav-link
 {
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
   margin-left: 30px;
   font-family: 'Kanit', sans-serif;
 
+}
+.nav-item a {
+  color: white !important;
 }
 .container-fluid
 {
@@ -45,4 +45,23 @@ background: linear-gradient(to top, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Fir
     width: 100% !important;
 
   }
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.text-sitio {
+  padding: 20px;
+  margin-left: 20px;
+  line-height: 30px;
 }

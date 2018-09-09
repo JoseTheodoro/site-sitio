@@ -39,13 +39,13 @@
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
+                          <a class="nav-link" href="{{route('cardapio.index')}}">
                             <span data-feather="file-text"></span>
                             Cardápio
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{route('eventos.index')}}">
                             <span data-feather="file-plus"></span>
                             Eventos
                           </a>

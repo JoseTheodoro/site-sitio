@@ -6,7 +6,7 @@
 @section('content')
 
 <p>
-        <a href="{{route('fotos')}}"> <span data-feather="skip-back"></span> Voltar </a>
+        <a href="{{route('fotos.index')}}"> <span data-feather="skip-back"></span> Voltar </a>
 </p>
 
 

@@ -1,6 +1,16 @@
 @extends('site.layout')
 
 
+@section('content_out')
+<div class="jumbotron text-white banner" style="border:none; background-color: #20bf6b; border-radius:0px">
+        <div class="container">
+          <h1 class="display-3">É fácil nos achar!</h1>
+          <p>Qualquer problema, ligue pra gente ou manda um whats!</p>
+        </div>
+      </div>
+@endsection 
+
+
 @section('content')
 <h2 style="margin: 20px">Informações para contato:</h2>
 <hr class="my-4">

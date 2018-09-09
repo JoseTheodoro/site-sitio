@@ -9,6 +9,7 @@ class GastronomiaController extends Controller
 {
     public function index()
     {
-        return view('site.gastronomia');
+        $cardapios = \App\Cardapio::all();
+        return view('site.gastronomia')->with(compact('cardapios'));
     }
 }
