@@ -25,10 +25,11 @@ class FotosController extends Controller
         $originalImage = $request->file('image');
         $name = $originalImage->getClientOriginalName();
         $image = \Image::make($originalImage)->encode('jpg', 100);
-
-        // $image->heighten(1000, function($constraint) {
-        //     $constraint->aspectRatio();
-        // });
+        $image->orientate();
+        $image->heighten(1000, function($constraint) {
+            $constraint->upsize();
+            $constraint->aspectRatio();
+        });
         $name = $time . $name;
         if ( $image->save($path.$name) ) {
             \App\Fotos::create(['name' => $name]);
