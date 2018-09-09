@@ -26,9 +26,9 @@ class FotosController extends Controller
         $name = $originalImage->getClientOriginalName();
         $image = \Image::make($originalImage)->encode('jpg', 100);
 
-        $image->resize(1200,null, function($constraint) {
-            $constraint->aspectRatio();
-        });
+        // $image->resize(1200,null, function($constraint) {
+        //     $constraint->aspectRatio();
+        // });
         $name = $time . $name;
         if ( $image->save($path.$name) ) {
             \App\Fotos::create(['name' => $name]);
