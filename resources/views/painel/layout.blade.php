@@ -15,9 +15,7 @@
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="{{route('dash')}}">Jardim dos Vagalumes</a>
   
                 <ul class="navbar-nav px-3">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                
                   <li class="nav-item text-nowrap">
                   <a class="nav-link" href="{{route('logout')}}"><span data-feather="user-x"></span> Sair</a>
                   </li>
