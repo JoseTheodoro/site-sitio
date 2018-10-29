@@ -40,7 +40,7 @@
               </div>
             <div class="card-body">
                 <img style="margin: 30px;" class="float-right" src="/images/store.svg" height="110" alt="">
-              <p class="card-text text-sitio"><b>Estamos funcionando apenas com visita agendada.</b> <a href="{{route('localizacao')}}">Agende uma agora</a>. Para o café da manhã, almoço e jantar <a href="{{route('gastronomia')}}">temos cardápios</a> que devem ser contratados antecipadamente, informando o número de pessoas e o horário de permanência. Bebidas serão vendidas separadamente em nosso bar. Para eventos, fazer reserva com 2 dias de atecendência. Mínimo 10 pessoas e máximo 60 pessoas. </p>
+              <p class="card-text text-sitio"><b>Estamos funcionando apenas com visita agendada.</b> <a href="{{route('localizacao')}}">Agende uma agora</a>. Para o café da manhã, almoço e jantar <a href="{{route('gastronomia')}}">temos cardápios</a> que devem ser contratados antecipadamente, informando o número de pessoas e o horário de permanência. Bebidas serão vendidas separadamente em nosso bar. Para eventos, fazer reserva com 2 dias de antecendência.</p>
             </div>
       </div>
     </div>
