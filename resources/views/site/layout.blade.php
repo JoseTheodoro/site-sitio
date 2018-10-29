@@ -36,7 +36,7 @@
             <a class="nav-link" href={{route('fotos')}}>Fotos</a>
             </li>
              <li class="nav-item">
-             <a class="nav-link" href={{route('gastronomia')}}>Gastronomia</a>
+             <a class="nav-link" href={{route('gastronomia')}}>Cardápios</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href={{route('localizacao')}}>Localização</a>
