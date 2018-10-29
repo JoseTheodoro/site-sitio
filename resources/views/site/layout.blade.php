@@ -54,7 +54,7 @@
     </div>
       <!-- FOOTER -->
       <footer class="container">
-        <p>&copy; 2018 - Sítio dos Vagalumes</p>
+        <p>&copy; 2018 - Jardim dos Vagalumes</p>
       </footer>
     </main>
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
