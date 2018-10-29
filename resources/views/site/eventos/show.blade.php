@@ -4,7 +4,7 @@
 @section('content_out')
 <div class="jumbotron text-white banner" style="border:none; background-color: #20bf6b; border-radius:0px">
         <div class="container">
-          <h1 class="display-3">Esperamo sua família para {{$evento->name}} </h1>
+          <h1 class="display-3">Esperamos sua família para {{$evento->name}} </h1>
           <p>Confirme presença e curta uma ótima comida e um lugar maravilhoso!</p>
           <p><a class="btn btn-outline-light btn-lg" href="{{route('eventos.confirm', $evento->id)}}" role="button">Confirmar presença »</a></p>
         </div>
