@@ -25,7 +25,7 @@
             </div>
           <div class="card-body">
               <img style="margin: 30px;" class="float-left" src="/images/house.svg" height="120" alt="">
-            <p class="card-text text-sitio">Uma agradável e moderna infraestrutura te esperam no Sítio Jardim dos Vagalumes, em Mogi das Cruzes. Cercada pelo verde, em uma área de 140 mil metros quadrados, no Bairro Cocuera, o sítio oferece a oportunidade de desfrutar momentos de descontração e bem-estar no campo, com excelentes <a href="{{route('gastronomia')}}">opções de gastronomia</a> e passeios pela propriedade. Dentre as opções estão tres lagos para pesca, playgroud, horta, pomar, viveiro de arvores nativas e mudas de ervas, amplo estacionamento e restaurante. <a href="{{route('fotos')}}">dê uma olhada em nossas fotos</a></p>
+            <p class="card-text text-sitio">Uma agradável e moderna infraestrutura te esperam no Sítio Jardim dos Vagalumes, em Mogi das Cruzes. Cercada pelo verde, em uma área de 140 mil metros quadrados, no Bairro Cocuera, o sítio oferece a oportunidade de desfrutar momentos de descontração e bem-estar no campo, com excelentes <a href="{{route('gastronomia')}}">opções de gastronomia</a> e passeios pela propriedade. Dentre as opções estão três lagos para pesca, playground, horta, pomar, viveiro de arvores nativas e mudas de ervas, amplo estacionamento e restaurante. <a href="{{route('fotos')}}">dê uma olhada em nossas fotos</a></p>
           </div>
     </div>
   </div>
