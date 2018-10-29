@@ -32,7 +32,7 @@
                     <p class="card-text">{{str_limit($evento->descricao, 100)}}</p>
                 </div>
                 <div class="card-body">
-                    <a href="{{route('eventos.show', $evento->id)}}" class="card-link">Mais informnações</a>
+                    <a href="{{route('eventos.show', $evento->id)}}" class="card-link">Mais informações</a>
                     <a href="{{route('eventos.confirm', $evento->id)}}" class="card-link">Inscreva-se</a>
                 </div>
                 <div class="card-footer text-muted">
