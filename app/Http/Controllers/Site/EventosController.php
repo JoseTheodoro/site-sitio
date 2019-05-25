@@ -11,7 +11,7 @@ class EventosController extends Controller
     public function index()
     {
         $today = Carbon::now()->format('Y-m-d');
-        $eventos = \App\Eventos::where('data', '>', $today)->orderBy('data')->get();
+        $eventos = \App\Eventos::orderBy('data')->get();
 
         return view('site.eventos.index')->with(compact('eventos'));
     }
