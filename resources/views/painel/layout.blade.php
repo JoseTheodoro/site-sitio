@@ -21,7 +21,9 @@
                   </li>
                 </ul>
               </nav>
-          
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
               <div class="container-fluid">
                 <div class="row">
                   <nav class="col-md-2 d-none d-md-block bg-light sidebar">
