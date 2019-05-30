@@ -34,7 +34,7 @@
                 <div class="card-body">
                     <a href="{{route('eventos.show', $evento->id)}}" class="card-link">Mais informações</a>
                     @if($evento->lotado)
-                    <p><b>Reservas esgotadas!</b></p>
+                    <p class="btn btn-sm btn-danger"><b>Reservas esgotadas!</b></p>
                     @else
                     <a href="{{route('eventos.confirm', $evento->id)}}" class="card-link">Inscreva-se</a>
                     @endif
