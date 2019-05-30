@@ -1,6 +1,6 @@
 @extends('painel.layout')
 
-@section('name', 'Painel Administrativo');
+@section('name', 'Painel Administrativo')
 
 @section('content')
 

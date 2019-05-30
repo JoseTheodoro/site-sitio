@@ -1,6 +1,6 @@
 @extends('painel.layout')
 
-@section('name', 'Cardapios');
+@section('name', 'Cardapios')
 
 @section('content')
 

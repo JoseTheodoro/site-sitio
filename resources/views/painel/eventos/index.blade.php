@@ -6,10 +6,10 @@
 
 
 <p>
-        <a href="{{route('eventos.create')}}"><span data-feather="folder-plus"></span> Novo Evento</a>
+        <a class="btn btn-primary" href="{{route('eventos.create')}}"><span data-feather="folder-plus"></span> Novo Evento</a>
 </p>
-
-<table class="table">
+<div class="table-responsive">
+<table class="table table-striped table-bordered">
 
         <thead>
             <tr>
@@ -17,8 +17,8 @@
                 <th>Name</th>
                 <th>Data</th>
                 <th></th>
-                <th></th>
-                <th></th>
+                <th width="50"></th>
+                <th width="50"></th>
             </tr>
         </thead>
     
@@ -29,13 +29,14 @@
                 <td>{{$evento->name}}</td>
                 <td>{{$evento->data->format('d/m/Y')}}</td>
                 <td> <a href={{route('eventos.reserva', $evento->id)}}> <span data-feather="check-square"></span> Reservas ({{$evento->confirm_count}}) </a> </td>
-                <td> <a href={{route('eventos.edit', $evento->id)}}> <span data-feather="edit"></span> Editar </a> </td>
-                <td> <a href={{route('eventos.delete', $evento->id)}}> <span data-feather="delete"></span> Remover </a> </td>
+                <td> <a class="btn" href={{route('eventos.edit', $evento->id)}}> <span class="fa fa-edit" data-feather="edit"></span></a> </td>
+                <td> <a class="btn btn-danger" href={{route('eventos.delete', $evento->id)}}> <span class="fa fa-trash" data-feather="delete"></span> </a> </td>
             </tr>
             @endforeach
         </tbody>
     
     </table>
+    </div>
 
 
 @endsection
