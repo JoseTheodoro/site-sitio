@@ -20,9 +20,9 @@
 
     <div class="form-group">
         <label for="">Reservas Esgotadas</label>
-        <select name="lotado" id="">
-                <option value="0">Não</option>
-                <option value="1">Sim</option>
+        <select name="lotado" class="from-control">
+                <option {{ $evento->lotado == 0 ? 'selected' : '' }} value="0">Não</option>
+                <option {{ $evento->lotado == 1 ? 'selected' : '' }} value="1">Sim</option>
         </select>
     </div>
 
