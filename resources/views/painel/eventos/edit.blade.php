@@ -19,6 +19,14 @@
     </div>
 
     <div class="form-group">
+        <label for="">Reservas Esgotadas</label>
+        <select name="lotado" id="">
+                <option value="0">Não</option>
+                <option value="1">Sim</option>
+        </select>
+    </div>
+
+    <div class="form-group">
             <label for="">Descrição do evento</label>
             <textarea name="descricao" rows="5" class="form-control">{{$evento->descricao}}</textarea>
     </div>

@@ -6,7 +6,11 @@
         <div class="container">
           <h1 class="display-3">Esperamos sua família para {{$evento->name}} </h1>
           <p>Confirme presença e curta uma ótima comida e um lugar maravilhoso!</p>
-          <p><a class="btn btn-outline-light btn-lg" href="{{route('eventos.confirm', $evento->id)}}" role="button">Confirmar presença »</a></p>
+          @if($evento->lotado)
+            <p class="btn btn-outline-light btn-lg"><b>Reservas esgotadas!</b></p>        
+          @else
+            <p><a class="btn btn-outline-light btn-lg" href="{{route('eventos.confirm', $evento->id)}}" role="button">Confirmar presença »</a></p>
+          @endif
         </div>
       </div>
 @endsection 

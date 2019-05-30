@@ -64,6 +64,7 @@ class EventosController extends Controller
         $evento->name = $request->name;
         $evento->descricao = $request->descricao;
         $evento->data = $request->data;
+        $evento->lotado = $request->lotado;
 
         $evento->save();
 
