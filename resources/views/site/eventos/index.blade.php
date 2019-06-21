@@ -9,12 +9,20 @@
           <p><a class="btn btn-outline-light btn-lg" href="{{route('localizacao')}}" role="button">Veja como é fácil fazer seu evento »</a></p>
         </div>
       </div>
-@endsection 
-  
+@endsection
+
 
 
 
 @section('content')
+
+<div class="alert alert-warning" role="alert">
+  Caso não seja confirmado o mínimo de 15 reservas,
+    o evento será cancelado automaticamente
+    e todos os inscritos serão avisados 12 horas antes.
+</div>
+
+
 <div class="box" style="padding:20px">
         @if (session('message'))
         <div class="alert alert-success">
@@ -22,7 +30,7 @@
         </div>
         @endif
     <div class="row">
-           
+
         @forelse($eventos as $evento)
         <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
