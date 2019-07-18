@@ -53,6 +53,9 @@
             <li class="nav-item">
             <a class="nav-link" href={{route('localizacao')}}>Localização</a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/docs/english.pdf">English</a>
+            </li>
           </ul>
           <a class="float-right nav-item" target="__blank" href="https://pt-br.facebook.com/sitiojardimdosvagalumes/"><img src="/images/facebook.svg" height="24" alt=""></a>
         </div>

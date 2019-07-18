@@ -11,4 +11,9 @@ class SitioController extends BaseController
         return view('site.sitio');
     }
 
+    public function english()
+    {
+        return view('site.english');
+    }
+
 }

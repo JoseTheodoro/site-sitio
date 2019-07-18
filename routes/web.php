@@ -3,6 +3,7 @@
 Route::get('/','Site\HomeController@index')->name('home');
 
 Route::get('/sitio', 'Site\SitioController@index')->name('sitio');
+Route::get('/english', 'Site\SitioController@english')->name('english');
 
 Route::get('/eventos', 'Site\EventosController@index')->name('eventos');
 Route::get('/eventos/show/{id}', 'Site\EventosController@show')->name('eventos.show');
