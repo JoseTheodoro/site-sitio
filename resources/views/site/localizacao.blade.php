@@ -18,7 +18,7 @@
 <div>
     <p><b>Endereço: </b> Estrada Yamashita - Mogi das Cruzes - SP </p>
     <p><b>Telefone: 11 4792-2198</b> </p>
-    <p><b>WhatsApp: 19 99657-8316</b> </p>
+    <p><b>WhatsApp: 11 97152-8316</b> </p>
     <p><b>Email: </b>atendimento@jardimdosvagalumes.com.br</p>
 </div>
 
